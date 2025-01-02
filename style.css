@@ -439,7 +439,31 @@ main {
     justify-content: center;
     align-items: center;
   }
-  /* login section starts here  */
+
+  .login-card-body{
+    padding: 45px 20px;
+  }
+
+  .login-input{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+  }
+
+  .login-input input{
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px 20px;
+    font-size: 18px;
+  }
+  .login-input label{
+    font-size: 20px;
+    text-align: start;
+  }
+  /* login section Ends here  */
 
   /* profile starts here  */
   .profile {
@@ -469,6 +493,9 @@ main {
   .contact-container {
     margin-top: 5rem;
   }
+  .contact-body{
+    margin: 0px 20px;
+  }
   .contact-address {
     flex: 1;
     flex-direction: column;
@@ -476,6 +503,22 @@ main {
   }
   .contact-maps {
     width: 80%;
+  }
+  .contact-message{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contact-message label{
+    font-size: 20px;
+  }
+  .contact-message textarea{
+    border-radius: 10px;
+
+  }
+
+  .contact-section-header{
+    margin-bottom: 30px;
   }
   /* contact ends here  */
   /* main content ends here  */
@@ -562,11 +605,17 @@ main {
     .cart-items .cart-payment {
       width: 90%;
     }
+    .login-input input{
+      width: 100%;
+    }
   }
 
   @media (max-width:768px) {
     .products{
       grid-template-columns: repeat(2, minmax(0,1fr));
+    }
+    .login-input input{
+      width: 100%;
     }
   }
   @media (max-width:600px) {
@@ -597,6 +646,9 @@ main {
     .register .card,
     .login .card{
       width: 90%;
+    }
+    .login-input input{
+      width: 100%;
     }
     
   }
